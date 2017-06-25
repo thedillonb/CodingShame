@@ -2,7 +2,7 @@ body {
   font-family: 'PT Sans', sans-serif;
   padding: 20px;
   margin: 0;
-  font-size: 18px;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
   line-height: 1.9em;
@@ -117,7 +117,7 @@ span[data-note] {
 }
 
 .logo {
-  margin: 0 auto 35px;
+  margin: 0 auto 1.8em;
   text-align: center;
   position: relative;
   img {
@@ -321,7 +321,7 @@ section {
     margin: 0;
     padding: 0;
     li {
-      margin: 25px 0;
+      margin: 1em 0;
       .title {
         max-width: 100%;
         overflow: hidden !important;
