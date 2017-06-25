@@ -1,44 +1,35 @@
-# Site Info
 title:              "Coding Shame"
 description:        "Learning to program by knowing what not to do"
-google_analytics:   UA-33497514-2 # Put your Google Analytics code
+google_analytics:   UA-33497514-2
 
-# Author Info
+twitter:
+  username: thedillonb
+
 author_name:        "Dillon Buchanan"
 author_email:       thedillonb@gmail.com
-twitter_username:   thedillonb
 
-# Site Settings
-baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
-permalink:          /articles/:title # Post permalink
-timezone:           America/New_York # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+permalink:          /articles/:title
+timezone:           America/New_York
 
-# Site Build
-highlighter:        pygments
 markdown:           kramdown
 kramdown:
     input:          GFM
     coderay_line_numbers: ''
+    syntax_highlighter: rouge
+
 sass:
     style:          :compressed
 
-# Other Params
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
+
 gems:
   - jekyll-sitemap
-
-compress_html:
-    clippings:      all
-    ingore:
-        envs:       [ "test" ]
+  - jekyll-feed
+  - jekyll-seo-tag
+  - rouge
 
 defaults:
-  -
-    scope:
-      path:         ""
-    values:
-      layout:       "null"
   -
     scope:
       type:         "pages"
